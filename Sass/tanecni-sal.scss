@@ -1,0 +1,79 @@
+@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+
+$colors: (
+  gold-main: #FFC062,
+  gold-light: #FFD9A0,
+  background: #FFEFD8,
+  grey-light: #CECECE,
+  grey-dark: #858585,
+  black-light: #303030,
+  black-dark: #171717
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+#tanecni-sal {
+
+  .row {
+    min-height: 68vh;
+    background: linear-gradient(rgba(29,29,29,0.40,),rgba(29,29,29,0.40,)), url('../img/jirkaPhotos/sal-bg.jpg') 50% 50%/cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px 30px 20 30px;
+      min-height: 45vh;
+      margin-bottom: 15px;
+    }
+
+    //TANEČNÍ SÁL
+      h2 {
+        font-family: 'Montserrat';
+        font-size: 35px;
+        font-weight: bold;
+        color: color(gold-main);
+        padding-bottom: 20px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 40px;
+        }
+      }
+
+    //TEXT
+      p {
+        font-family: 'Montserrat';
+        color: color(grey-light);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 40px;
+        font-weight: 500;
+      }
+
+    //BUTTON
+      .btn {
+        width: 167px;
+        height: 55px;
+        font-family: 'Frank Ruhl Libre';
+        font-size: 25px;
+        font-weight: 500;
+        background-color: white;
+        color: color(gold-main);
+        border: 0;
+        border-radius: 50px;
+        transition: color 0.1s ease-in, background 0.1s ease-in;
+      }
+
+      //HOVER EFFECT - BUTTON
+        .btn:hover {
+        background: color(gold-main);
+        color: color(black-light);
+        }
+  }
+}

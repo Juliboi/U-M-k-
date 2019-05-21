@@ -1,0 +1,301 @@
+@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+
+//variables
+  $colors: (
+    gold-main: #FFC062,
+    gold-light: #FFD9A0,
+    background: #FFEFD8,
+    grey-light: #CECECE,
+    grey-dark: #858585,
+    black-light: #303030,
+    black-dark: #171717
+  );
+
+  @function color($color-name) {
+    @return map-get($colors, $color-name);
+  }
+
+//UNIVERSAL STYLES
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background: color(background) !important;
+  }
+
+#frontpage {
+  //BACKGROUND IMG, HEIGHT, GRADIENT
+    .container-fluid {
+      min-height: 100vh;
+
+      background: linear-gradient(rgba(29,29,29,0.80,),rgba(29,29,29,0.55,)), url('../img/jirkaPhotos/frontpage.JPG')no-repeat 22% 70%;
+      background-size: cover;
+
+      //add a media query to solve the grey bg
+      @include media-breakpoint-up(md) {
+        background: linear-gradient(rgba(29,29,29,0.80,),rgba(29,29,29,0.55,)), url('../img/jirkaPhotos/frontpage.JPG')no-repeat 50% 35%;
+        background-size: cover;
+      }
+
+    //NAVBAR
+      .navbar {
+        background: color(black-dark);
+        transition: background 0.2s ease-in;
+
+        @include media-breakpoint-up(xl) {
+          background: transparent;
+          padding-bottom: 20px;
+        }
+
+      //LOGO
+        .navbar-brand {
+          height: 45px;
+          width: 100px;
+          padding: 0;
+
+          @include media-breakpoint-up(xl) {
+            width: 180px;
+            height: 70px;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+          }
+        }
+
+      //UL
+        .collapse {
+          @include media-breakpoint-up(xl) {
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+          }
+        }
+
+      //LI
+        .nav-item {
+          display: flex;
+          justify-content: center;
+
+          @include media-breakpoint-up(xl) {
+            margin-left: 2vw;
+          }
+
+          @media only screen and (min-width: 1600px) {
+            margin-left: 5vw;
+          }
+        }
+
+      //FIRST ITEM - ÚVODNÍ
+        .nav-item:nth-child(1) {
+          @include media-breakpoint-up(xl) {
+            margin-left: 0px;
+          }
+        }
+
+      //LINKS
+        .nav-link {
+          color: white;
+          font-family: 'Montserrat';
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+          transition: color 0.2s ease-in;
+
+
+          @include media-breakpoint-up(xl) {
+            font-size: 18px;
+          }
+        }
+
+      //HOVER EFFECT - LINKS
+        .nav-link:hover {
+          color: color(gold-light);
+        }
+
+      //SM-ICONS
+        .icons {
+          display: none;
+
+          @include media-breakpoint-up(xl) {
+            display: block;
+            position: absolute;
+            top: 28px;
+            right: 40px;
+          }
+
+          .icon {
+            width: 20px;
+            margin-left: 15px;
+          }
+
+          .facebook {
+            margin-left: 0;
+          }
+
+          .map {
+            width: 28px;
+            fill: red;
+          }
+        }
+
+      //HOVER EFFECT - ICON
+        .icon:hover {
+          color: color(gold-light);
+        }
+
+      //HAMBURGER BUTTON
+        //CONTAINER
+        .navbar-toggler {
+          padding: 0;
+        }
+
+        .navbar-toggler:focus{
+          outline: none;
+        }
+
+        //ACTUALL ICON
+        .navbar-toggler-icon {
+          font-size: 28px;
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='RGB(255,192,98)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+          position: relative;
+
+          @include media-breakpoint-up(xl) {
+            font-size: 40px;
+          }
+        }
+    }
+
+    //FRONT DISPLAY TEXT + BUTTON
+      .row {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+
+      //MAIN CONTAINER => SMALLER THAN THE ROW
+        .front-display {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 80px 0 20px 0;
+
+          @include media-breakpoint-up(xl) {
+            padding-top: 100px;
+          }
+
+
+
+          //VÍTEJTE
+          p {
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 23px;
+            font-weight: 500;
+            margin: 0;
+
+            @include media-breakpoint-up(md) {
+              font-size: 40px;
+            }
+
+            @include media-breakpoint-up(xl) {
+              font-size: 30px;
+            }
+
+            @media only screen and (min-width: 1600px) {
+              font-size: 40px;
+            }
+          }
+
+          //HOSTINEC U MÍŠKŮ LOGO
+            .hostinec {
+              width: 320px;
+              padding-right: 0px;
+
+              @include media-breakpoint-up(md) {
+                width: 500px;
+              }
+              @media only screen and (min-width: 1600px) {
+                width: 800px;
+              }
+            }
+
+          //BEER ICON
+            .cheers {
+              width: 50px;
+              margin: 10px 0 15px 0;
+
+              @include media-breakpoint-up(md) {
+                width: 60px;
+                margin: 10px 0 20px 0;
+              }
+
+              @media only screen and (min-width: 1600px) {
+                width: 80px;
+                margin: 10px 0 40px 0;
+              }
+            }
+
+          //SRDCE DOLNÍCH CHABER
+            h3 {
+              color: color(gold-main);
+              font-family: 'Montserrat';
+              font-size: 12px;
+              letter-spacing: 5px;
+              text-transform: uppercase;
+              margin-bottom: 50px;
+
+
+
+              @include media-breakpoint-up(md) {
+                font-size: 15px;
+                letter-spacing: 8px;
+              }
+
+              @media only screen and (min-width: 1600px) {
+                font-size: 20px;
+                letter-spacing: 10px;
+              }
+            }
+
+          //BUTTON
+            .btn {
+              width: 137px;
+              height: 60px;
+              font-family: 'Frank Ruhl Libre';
+              font-weight: 500;
+              background-color: white;
+              color: color(gold-main);
+              border: 0;
+              border-radius: 50px;
+              text-align: center;
+              font-size: 25px;
+              transition: color 0.1s ease-in, background 0.1s ease-in;
+            }
+
+          //OUTLINE DELETE
+            .btn:focus{
+              box-shadow:none;
+            }
+
+          //HOVER EFFECT - BUTTON
+            .btn:hover {
+              background: color(gold-main);
+              color: white;
+            }
+        }
+      }
+  }
+}
+
+
+//JS - NAVBAR SCROLL
+.changeBackground {
+  background: color(black-dark) !important;
+}

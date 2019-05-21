@@ -1,0 +1,98 @@
+@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+
+$colors: (
+  gold-main: #FFC062,
+  gold-light: #FFD9A0,
+  background: #FFEFD8,
+  grey-light: #CECECE,
+  grey-dark: #858585,
+  black-light: #303030,
+  black-dark: #171717
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+#listky {
+  .row {
+    background-color: color(background);
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    //COL JIDENI + NAPOJOVY LISTEK
+      .listek {
+        background: color(gold-light);
+        min-height: 50vh;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+
+        @include media-breakpoint-up(md) {
+          min-height: 30vh;
+        }
+
+        @include media-breakpoint-up(lg) {
+          min-height: 40vh;
+        }
+
+
+        //TEXT
+          h2 {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 30px;
+            text-transform: capitalize;
+            color: color(black-light);
+
+            @include media-breakpoint-up(lg) {
+              font-size: 50px;
+            }
+          }
+
+        //ICON
+          img {
+            width: 90px;
+            margin: 0px 0 10px 0;
+          }
+
+        //UNDERLINE
+          .line {
+            display: block;
+            width: 111px;
+            height: 7px;
+            background: #FFC062;
+            margin: 0 auto;
+          }
+
+        //BUTTON
+          .btn {
+            width: 137px;
+            height: 55px;
+            font-family: 'Frank Ruhl Libre';
+            font-weight: 500;
+            font-size: 25px;
+            background-color: color(black-light);
+            color: color(gold-main);
+            border: 0;
+            border-radius: 50px;
+            margin-top: 30px;
+
+            @include media-breakpoint-up(lg) {
+              margin: 0;
+            }
+          }
+
+          //OUTLINE DELETE
+            .btn:focus{
+              box-shadow: none;
+            }
+    }
+
+  }
+}

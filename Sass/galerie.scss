@@ -1,0 +1,115 @@
+@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+
+$colors: (
+  gold-main: #FFC062,
+  gold-light: #FFD9A0,
+  background: #FFEFD8,
+  grey-light: #CECECE,
+  grey-dark: #858585,
+  black-light: #303030,
+  black-dark: #171717
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+#galerie {
+  .container-fluid {
+    background: color(background);
+    text-align: center;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 20px;
+    }
+
+    //GALERIE
+      h2 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 30px;
+
+        @include media-breakpoint-up(lg) {
+          margin: 0 0 5px 0;
+          font-size: 50px;
+        }
+      }
+
+    //UNDERLINE
+      .line {
+        display: block;
+        width: 111px;
+        height: 7px;
+        background: #FFC062;
+        margin: 0 auto 20px auto;
+      }
+
+
+    //FIRST ROW
+      .photos {
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+        padding: 0 7px;
+
+         //all the photo columns
+           .collumn {
+              padding: 6px;
+
+              //PHOTOS
+                .photo {
+                  background: url('../img/jirkaPhotos/gallery-photos/img1.jpg')50% 50%/cover;
+                  height: 177px;
+
+                  @include media-breakpoint-up(lg) {
+                    height: 300px;
+                  }
+                }
+
+                .photo2 {
+                  background: url('../img/jirkaPhotos/gallery-photos/img2.jpg')100% 50%/cover;
+                }
+
+                .photo3 {
+                  background: url('../img/jirkaPhotos/gallery-photos/img3.jpg')70% 50%/cover;
+                }
+
+                .photo4 {
+                  background: url('../img/jirkaPhotos/gallery-photos/img4.jpg')50% 50%/cover;
+                }
+
+                .photo5 {
+                  background: url('../img/jirkaPhotos/gallery-photos/img5.jpg')70% 50%/cover;
+                }
+
+                .photo6 {
+                  background: url('../img/jirkaPhotos/gallery-photos/img6.jpg')50% 50%/cover;
+                }
+            }
+      }
+
+    //BUTTON
+      .btn {
+        width: 127px;
+        height: 55px;
+        font-family: 'Frank Ruhl Libre';
+        font-weight: 600;
+        font-size: 25px;
+        background-color: color(gold-main);
+        color: color(black-light);
+        border: 0;
+        border-radius: 50px;
+        margin-top: 20px;
+
+        @include media-breakpoint-up(lg) {
+          margin-top: 40px;
+        }
+      }
+
+    //OUTLINE DELETE
+      .btn:focus{
+        box-shadow: none;
+      }
+  }
+}
