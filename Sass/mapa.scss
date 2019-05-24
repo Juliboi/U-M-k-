@@ -15,14 +15,14 @@ $colors: (
 }
 
 #mapa {
+  background-color: color(background);
+
   .row {
     padding-top: 50px;
     text-align: center;
-    margin-bottom: 50px;
 
     @include media-breakpoint-up(lg) {
     padding-top: 70px;
-    margin-bottom: 100px;
     }
 
     //KDE NÁS NAJDETE
@@ -57,4 +57,53 @@ $colors: (
         height: 400px;
       }
   }
+}
+
+
+//outer info box
+.gm-style-iw-c {
+  padding: 15px !important;
+  background: color(black-dark) !important;
+
+  button {
+    opacity: 1;
+
+    img {
+      object-position: -99999px 99999px;
+      background: url('../img/icons/close.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 10px 0px 0 0 !important;
+    }
+  }
+
+
+  //inner info box
+  .gm-style-iw-d{
+    overflow: visible !important;
+
+    //address
+    .bi {
+      margin: 0;
+      color: color(gold-main);
+    }
+
+    //ICON
+    .beer {
+      width: 50px !important;
+      margin: 5px 0 5px 0 !important;
+    }
+
+    //Těšíme se na vás
+    p:last-child {
+      color: color(gold-main);
+      font-weight: 500;
+    }
+  }
+}
+
+//pointer down
+.gm-style-iw-t::after{
+  background: black !important;
 }

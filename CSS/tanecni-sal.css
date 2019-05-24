@@ -8132,59 +8132,65 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#tanecni-sal .row {
-  min-height: 68vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.4)), to(rgba(29, 29, 29, 0.4))), url("../img/jirkaPhotos/sal-bg.jpg") 50% 50%/cover;
-  background: -webkit-linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.jpg") 50% 50%/cover;
-  background: -o-linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.jpg") 50% 50%/cover;
-  background: linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.jpg") 50% 50%/cover;
-  background-attachment: fixed;
-  text-align: center;
-  padding: 30px 0 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  @media (min-width: 768px) {
-    #tanecni-sal .row {
-      padding: 20px 30px 20 30px;
-      min-height: 45vh;
-      margin-bottom: 15px; } }
-  #tanecni-sal .row h2 {
-    font-family: 'Montserrat';
-    font-size: 35px;
-    font-weight: bold;
-    color: #FFC062;
-    padding-bottom: 20px; }
+#tanecni-sal {
+  background-color: #FFEFD8; }
+  #tanecni-sal .row {
+    min-height: 68vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.4)), to(rgba(29, 29, 29, 0.4))), url("../img/jirkaPhotos/sal-bg.JPG") 50% 50%/cover;
+    background: -webkit-linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.JPG") 50% 50%/cover;
+    background: -o-linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.JPG") 50% 50%/cover;
+    background: linear-gradient(rgba(29, 29, 29, 0.4), rgba(29, 29, 29, 0.4)), url("../img/jirkaPhotos/sal-bg.JPG") 50% 50%/cover;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     @media (min-width: 768px) {
-      #tanecni-sal .row h2 {
-        font-size: 40px; } }
-  #tanecni-sal .row p {
-    font-family: 'Montserrat';
-    color: #CECECE;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 40px;
-    font-weight: 500; }
-  #tanecni-sal .row .btn {
-    width: 167px;
-    height: 55px;
-    font-family: 'Frank Ruhl Libre';
-    font-size: 25px;
-    font-weight: 500;
-    background-color: white;
-    color: #FFC062;
-    border: 0;
-    border-radius: 50px;
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in; }
-  #tanecni-sal .row .btn:hover {
-    background: #FFC062;
-    color: #303030; }
+      #tanecni-sal .row {
+        padding: 20px 30px 20 30px;
+        min-height: 45vh; } }
+    @media (min-width: 992px) {
+      #tanecni-sal .row {
+        background-attachment: fixed; } }
+    #tanecni-sal .row h2 {
+      font-family: 'Montserrat';
+      font-size: 35px;
+      font-weight: bold;
+      color: #FFC062;
+      padding-bottom: 20px; }
+      @media (min-width: 768px) {
+        #tanecni-sal .row h2 {
+          font-size: 40px; } }
+    #tanecni-sal .row p {
+      font-family: 'Montserrat';
+      color: #CECECE;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 40px;
+      font-weight: 500; }
+      @media (min-width: 768px) {
+        #tanecni-sal .row p {
+          font-size: 18px; } }
+    #tanecni-sal .row .btn {
+      width: 167px;
+      height: 55px;
+      font-family: 'Frank Ruhl Libre';
+      font-size: 25px;
+      font-weight: 500;
+      background-color: white;
+      color: #FFC062;
+      border: 0;
+      border-radius: 50px;
+      -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+      -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+      transition: color 0.1s ease-in, background 0.1s ease-in; }
+    #tanecni-sal .row .btn:hover {
+      background: #FFC062;
+      color: #303030; }

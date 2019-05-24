@@ -18,22 +18,16 @@
 //UNIVERSAL STYLES
   html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
   }
 
   *, *::before, *::after {
     box-sizing: inherit;
   }
 
-  body {
-    background: color(background) !important;
-  }
-
 #frontpage {
   //BACKGROUND IMG, HEIGHT, GRADIENT
     .container-fluid {
       min-height: 100vh;
-
       background: linear-gradient(rgba(29,29,29,0.80,),rgba(29,29,29,0.55,)), url('../img/jirkaPhotos/frontpage.JPG')no-repeat 22% 70%;
       background-size: cover;
 
@@ -47,6 +41,7 @@
       .navbar {
         background: color(black-dark);
         transition: background 0.2s ease-in;
+        min-height: 60px;
 
         @include media-breakpoint-up(xl) {
           background: transparent;

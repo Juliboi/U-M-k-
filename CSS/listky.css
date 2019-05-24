@@ -8184,6 +8184,60 @@ a.text-dark:hover, a.text-dark:focus {
       height: 7px;
       background: #FFC062;
       margin: 0 auto; }
+    #listky .row .listek .menu {
+      max-height: 0;
+      background: #FFD9A0;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 2s;
+      -o-transition: max-height 2s;
+      transition: max-height 2s; }
+      #listky .row .listek .menu .col-12 {
+        padding: 0; }
+        @media (min-width: 768px) {
+          #listky .row .listek .menu .col-12 {
+            padding: 0 16px 0 16px; } }
+      #listky .row .listek .menu .section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+        margin-bottom: 20px; }
+        #listky .row .listek .menu .section .type {
+          font-size: 20px;
+          font-weight: 600;
+          background: #FFC062; }
+          @media (min-width: 768px) {
+            #listky .row .listek .menu .section .type {
+              font-size: 30px; } }
+        #listky .row .listek .menu .section p {
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 32%;
+          flex: 1 0 32%;
+          font-size: 15px;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          border: 1px solid black;
+          margin: 0;
+          padding: 5px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          @media (min-width: 768px) {
+            #listky .row .listek .menu .section p {
+              font-size: 20px; } }
+    #listky .row .listek .mnam {
+      -webkit-transition: max-height 1.3s;
+      -o-transition: max-height 1.3s;
+      transition: max-height 1.3s; }
     #listky .row .listek .btn {
       width: 137px;
       height: 55px;
@@ -8201,3 +8255,9 @@ a.text-dark:hover, a.text-dark:focus {
     #listky .row .listek .btn:focus {
       -webkit-box-shadow: none;
       box-shadow: none; }
+
+.open-menu {
+  max-height: 2800px !important; }
+
+.open-menu2 {
+  max-height: 800px !important; }

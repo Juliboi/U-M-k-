@@ -42,7 +42,7 @@ $colors: (
         }
 
 
-        //TEXT
+        //NAPOJOVY LISTEK + JIDELNI LISTEK
           h2 {
             font-family: 'Montserrat';
             font-weight: 800;
@@ -55,7 +55,7 @@ $colors: (
             }
           }
 
-        //ICON
+        //COFFEE + DISH
           img {
             width: 90px;
             margin: 0px 0 10px 0;
@@ -70,6 +70,65 @@ $colors: (
             margin: 0 auto;
           }
 
+        //MENU
+
+        //main
+        .menu {
+          max-height: 0;
+          background: color(gold-light);
+          width: 100%;
+          padding: 0;
+          overflow: hidden;
+          transition: max-height 2s;
+
+          .col-12{
+            padding: 0;
+            @include media-breakpoint-up(md) {
+            padding: 0 16px 0 16px;
+            }
+          }
+
+          //pivo, lihoviny, nealko, etc..
+          .section {
+            display: flex;
+            flex-flow: wrap;
+            margin-bottom: 20px;
+
+          //breakpoint type + ammount
+          .type {
+            font-size: 20px;
+            font-weight: 600;
+            background: color(gold-main);
+
+            @include media-breakpoint-up(md) {
+              font-size: 30px;
+            }
+          }
+
+          //products
+            p {
+              flex: 1 0 32%;
+              font-size: 15px;
+              font-family: 'Montserrat';
+              font-weight: 500;
+              border: 1px solid black;
+              margin: 0;
+              padding: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              @include media-breakpoint-up(md) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        //food
+        .mnam {
+          transition: max-height 1.3s;
+        }
         //BUTTON
           .btn {
             width: 137px;
@@ -95,4 +154,13 @@ $colors: (
     }
 
   }
+}
+
+//JS - OPEN + CLOSE
+.open-menu {
+  max-height: 2800px !important;
+}
+
+.open-menu2 {
+  max-height: 800px !important;
 }

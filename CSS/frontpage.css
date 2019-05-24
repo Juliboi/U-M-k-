@@ -8134,17 +8134,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+  box-sizing: border-box; }
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
-
-body {
-  background: #FFEFD8 !important; }
 
 #frontpage .container-fluid {
   min-height: 100vh;
@@ -8164,7 +8160,8 @@ body {
     background: #171717;
     -webkit-transition: background 0.2s ease-in;
     -o-transition: background 0.2s ease-in;
-    transition: background 0.2s ease-in; }
+    transition: background 0.2s ease-in;
+    min-height: 60px; }
     @media (min-width: 1200px) {
       #frontpage .container-fluid .navbar {
         background: transparent;

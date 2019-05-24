@@ -8165,21 +8165,21 @@ a.text-dark:hover, a.text-dark:focus {
     #galerie .container-fluid .photos .collumn {
       padding: 6px; }
       #galerie .container-fluid .photos .collumn .photo {
-        background: url("../img/jirkaPhotos/gallery-photos/img1.jpg") 50% 50%/cover;
+        background: url("../img/jirkaPhotos/gallery-photos/img1.JPG") 50% 50%/cover;
         height: 177px; }
         @media (min-width: 992px) {
           #galerie .container-fluid .photos .collumn .photo {
             height: 300px; } }
       #galerie .container-fluid .photos .collumn .photo2 {
-        background: url("../img/jirkaPhotos/gallery-photos/img2.jpg") 100% 50%/cover; }
+        background: url("../img/jirkaPhotos/gallery-photos/img2.JPG") 100% 50%/cover; }
       #galerie .container-fluid .photos .collumn .photo3 {
-        background: url("../img/jirkaPhotos/gallery-photos/img3.jpg") 70% 50%/cover; }
+        background: url("../img/jirkaPhotos/gallery-photos/img3.JPG") 70% 50%/cover; }
       #galerie .container-fluid .photos .collumn .photo4 {
-        background: url("../img/jirkaPhotos/gallery-photos/img4.jpg") 50% 50%/cover; }
+        background: url("../img/jirkaPhotos/gallery-photos/img4.JPG") 50% 50%/cover; }
       #galerie .container-fluid .photos .collumn .photo5 {
-        background: url("../img/jirkaPhotos/gallery-photos/img5.jpg") 70% 50%/cover; }
+        background: url("../img/jirkaPhotos/gallery-photos/img5.JPG") 70% 50%/cover; }
       #galerie .container-fluid .photos .collumn .photo6 {
-        background: url("../img/jirkaPhotos/gallery-photos/img6.jpg") 50% 50%/cover; }
+        background: url("../img/jirkaPhotos/gallery-photos/img6.JPG") 50% 50%/cover; }
   #galerie .container-fluid .btn {
     width: 127px;
     height: 55px;
@@ -8197,3 +8197,13 @@ a.text-dark:hover, a.text-dark:focus {
   #galerie .container-fluid .btn:focus {
     -webkit-box-shadow: none;
     box-shadow: none; }
+
+.info-box {
+  font-family: 'Montserrat'; }
+  .info-box img {
+    width: 150px !important;
+    height: 60px;
+    margin: 0 !important; }
+  .info-box p {
+    color: white;
+    font-weight: 500; }

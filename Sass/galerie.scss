@@ -59,7 +59,7 @@ $colors: (
 
               //PHOTOS
                 .photo {
-                  background: url('../img/jirkaPhotos/gallery-photos/img1.jpg')50% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img1.JPG')50% 50%/cover;
                   height: 177px;
 
                   @include media-breakpoint-up(lg) {
@@ -68,23 +68,23 @@ $colors: (
                 }
 
                 .photo2 {
-                  background: url('../img/jirkaPhotos/gallery-photos/img2.jpg')100% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img2.JPG')100% 50%/cover;
                 }
 
                 .photo3 {
-                  background: url('../img/jirkaPhotos/gallery-photos/img3.jpg')70% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img3.JPG')70% 50%/cover;
                 }
 
                 .photo4 {
-                  background: url('../img/jirkaPhotos/gallery-photos/img4.jpg')50% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img4.JPG')50% 50%/cover;
                 }
 
                 .photo5 {
-                  background: url('../img/jirkaPhotos/gallery-photos/img5.jpg')70% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img5.JPG')70% 50%/cover;
                 }
 
                 .photo6 {
-                  background: url('../img/jirkaPhotos/gallery-photos/img6.jpg')50% 50%/cover;
+                  background: url('../img/jirkaPhotos/gallery-photos/img6.JPG')50% 50%/cover;
                 }
             }
       }
@@ -113,3 +113,21 @@ $colors: (
       }
   }
 }
+
+//INFO Google maps
+  .info-box {
+    font-family: 'Montserrat';
+    //U Míšků
+      img {
+        width: 150px !important;
+        height: 60px;
+        margin: 0 !important;
+      }
+
+
+      //Address
+      p {
+        color: white;
+        font-weight: 500;
+      }
+  }

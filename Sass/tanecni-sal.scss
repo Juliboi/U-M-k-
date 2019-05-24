@@ -15,11 +15,11 @@ $colors: (
 }
 
 #tanecni-sal {
+  background-color: color(background);
 
   .row {
     min-height: 68vh;
-    background: linear-gradient(rgba(29,29,29,0.40,),rgba(29,29,29,0.40,)), url('../img/jirkaPhotos/sal-bg.jpg') 50% 50%/cover;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(29,29,29,0.40,),rgba(29,29,29,0.40,)), url('../img/jirkaPhotos/sal-bg.JPG') 50% 50%/cover;
     text-align: center;
     padding: 30px 0 30px 0;
     display: flex;
@@ -29,7 +29,10 @@ $colors: (
     @include media-breakpoint-up(md) {
       padding: 20px 30px 20 30px;
       min-height: 45vh;
-      margin-bottom: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      background-attachment: fixed;
     }
 
     //TANEČNÍ SÁL
@@ -50,10 +53,14 @@ $colors: (
         font-family: 'Montserrat';
         color: color(grey-light);
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
         margin-bottom: 40px;
         font-weight: 500;
+
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+        }
       }
 
     //BUTTON

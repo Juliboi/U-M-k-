@@ -8132,140 +8132,141 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#o-nas .title-paragraph {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 50px;
-  text-align: center; }
-  @media (min-width: 1200px) {
-    #o-nas .title-paragraph {
-      text-align: left; } }
-  @media only screen and (min-width: 1500px) {
-    #o-nas .title-paragraph {
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      text-align: left; } }
-  #o-nas .title-paragraph h2 {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-bottom: 20px; }
-    @media (min-width: 1200px) {
-      #o-nas .title-paragraph h2 {
-        margin: 30px 0 15px 5px; } }
-  #o-nas .title-paragraph h3 {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 0 10px 0 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 15px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    @media (min-width: 1200px) {
-      #o-nas .title-paragraph h3 {
-        font-size: 50px;
-        padding: 0; } }
-  #o-nas .title-paragraph .line {
-    display: block;
-    width: 111px;
-    height: 7px;
-    background: #FFC062;
-    margin: auto; }
-    @media (min-width: 1200px) {
-      #o-nas .title-paragraph .line {
-        margin: 0 0 20px 5px; } }
-  #o-nas .title-paragraph .text {
-    padding-top: 40px; }
-    @media (min-width: 1200px) {
-      #o-nas .title-paragraph .text {
-        padding-top: 70px; } }
-    #o-nas .title-paragraph .text p {
-      font-family: 'Montserrat';
-      font-weight: 500;
-      font-size: 18px;
-      color: #858585;
-      line-height: 22px;
-      margin-bottom: 22px; }
-      @media (min-width: 1200px) {
-        #o-nas .title-paragraph .text p {
-          font-size: 20px; } }
-    #o-nas .title-paragraph .text p:nth-child(1) {
-      color: #303030;
-      font-weight: bold; }
-
-@media (min-width: 768px) {
-  #o-nas .cards {
+#o-nas {
+  background-color: #FFEFD8; }
+  #o-nas .title-paragraph {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 50px; } }
-
-#o-nas .cards .card {
-  height: 111px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.65)), to(rgba(29, 29, 29, 0.65))), url("../img/jirkaPhotos/hostinec-card.jpg") 70% 100%/cover;
-  background: -webkit-linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.jpg") 70% 100%/cover;
-  background: -o-linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.jpg") 70% 100%/cover;
-  background: linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.jpg") 70% 100%/cover;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 0;
-  text-decoration: none; }
-  @media (min-width: 768px) {
+    padding-top: 50px;
+    text-align: center;
+    overflow-x: hidden !important; }
+    @media (min-width: 1200px) {
+      #o-nas .title-paragraph {
+        text-align: left; } }
+    @media only screen and (min-width: 1500px) {
+      #o-nas .title-paragraph {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        text-align: left; } }
+    #o-nas .title-paragraph h2 {
+      font-family: 'Montserrat';
+      font-weight: 200;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+      @media (min-width: 1200px) {
+        #o-nas .title-paragraph h2 {
+          margin: 30px 0 15px 5px; } }
+    #o-nas .title-paragraph h3 {
+      font-family: 'Montserrat';
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0 10px 0 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 15px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      @media (min-width: 1200px) {
+        #o-nas .title-paragraph h3 {
+          font-size: 50px;
+          padding: 0; } }
+    #o-nas .title-paragraph .line {
+      display: block;
+      width: 111px;
+      height: 7px;
+      background: #FFC062;
+      margin: auto; }
+      @media (min-width: 1200px) {
+        #o-nas .title-paragraph .line {
+          margin: 0 0 20px 5px; } }
+    #o-nas .title-paragraph .text {
+      padding-top: 40px; }
+      @media (min-width: 1200px) {
+        #o-nas .title-paragraph .text {
+          padding-top: 70px; } }
+      #o-nas .title-paragraph .text p {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        color: #858585;
+        line-height: 22px;
+        margin-bottom: 22px; }
+      @media (min-width: 768px) {
+        #o-nas .title-paragraph .text {
+          font-size: 18px; } }
+      #o-nas .title-paragraph .text p:nth-child(1) {
+        color: #303030;
+        font-weight: bold; }
+  #o-nas .cards {
+    overflow-x: hidden !important; }
+    @media (min-width: 768px) {
+      #o-nas .cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 50px; } }
     #o-nas .cards .card {
-      margin: 0;
-      height: 300px; } }
-  @media (min-width: 992px) {
-    #o-nas .cards .card {
-      margin: 0;
-      height: 382px; } }
-  #o-nas .cards .card h2 {
-    font-family: 'Montserrat';
-    font-size: 30px;
-    font-weight: bold;
-    color: #FFC062;
-    -webkit-transition: color 0.2s ease-in;
-    -o-transition: color 0.2s ease-in;
-    transition: color 0.2s ease-in; }
-
-#o-nas .cards .card-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.25)), to(rgba(29, 29, 29, 0.25))), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
-  background: -webkit-linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
-  background: -o-linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
-  background: linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
-  margin: 0; }
-  @media (min-width: 768px) {
+      height: 111px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.65)), to(rgba(29, 29, 29, 0.65))), url("../img/jirkaPhotos/hostinec-card.JPG") 70% 100%/cover;
+      background: -webkit-linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.JPG") 70% 100%/cover;
+      background: -o-linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.JPG") 70% 100%/cover;
+      background: linear-gradient(rgba(29, 29, 29, 0.65), rgba(29, 29, 29, 0.65)), url("../img/jirkaPhotos/hostinec-card.JPG") 70% 100%/cover;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 0;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        #o-nas .cards .card {
+          margin: 0;
+          height: 300px; } }
+      @media (min-width: 992px) {
+        #o-nas .cards .card {
+          margin: 0;
+          height: 382px; } }
+      #o-nas .cards .card h2 {
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: bold;
+        color: #FFC062;
+        -webkit-transition: color 0.2s ease-in;
+        -o-transition: color 0.2s ease-in;
+        transition: color 0.2s ease-in; }
     #o-nas .cards .card-2 {
-      margin-left: 30px; } }
-  @media (min-width: 992px) {
-    #o-nas .cards .card-2 {
-      margin-left: 50px; } }
-  @media (min-width: 1200px) {
-    #o-nas .cards .card-2 {
-      margin-left: 100px; } }
-
-#o-nas .cards .card:hover h2 {
-  color: white; }
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 29, 29, 0.25)), to(rgba(29, 29, 29, 0.25))), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
+      background: -webkit-linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
+      background: -o-linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
+      background: linear-gradient(rgba(29, 29, 29, 0.25), rgba(29, 29, 29, 0.25)), url("../img/jirkaPhotos/sal-card.png") 55% 40%/cover;
+      margin: 0; }
+      @media (min-width: 768px) {
+        #o-nas .cards .card-2 {
+          margin-left: 30px; } }
+      @media (min-width: 992px) {
+        #o-nas .cards .card-2 {
+          margin-left: 50px; } }
+      @media (min-width: 1200px) {
+        #o-nas .cards .card-2 {
+          margin-left: 100px; } }
+    #o-nas .cards .card:hover h2 {
+      color: white; }

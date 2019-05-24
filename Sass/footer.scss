@@ -16,6 +16,12 @@ $colors: (
 
 #footer {
   .container-fluid {
+    padding-top: 50px;
+    background: color(background) !important;
+
+    @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    }
 
     //MAIN ROW => GOES ALL THE WAY WIDTH
       .row-main {

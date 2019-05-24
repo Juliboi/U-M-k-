@@ -8132,30 +8132,58 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#mapa .row {
-  padding-top: 50px;
-  text-align: center;
-  margin-bottom: 50px; }
-  @media (min-width: 992px) {
-    #mapa .row {
-      padding-top: 70px;
-      margin-bottom: 100px; } }
-  #mapa .row h2 {
-    font-family: 'Montserrat';
-    font-size: 30px;
-    font-weight: 800; }
+#mapa {
+  background-color: #FFEFD8; }
+  #mapa .row {
+    padding-top: 50px;
+    text-align: center; }
     @media (min-width: 992px) {
-      #mapa .row h2 {
-        font-size: 50px; } }
-  #mapa .row img {
-    width: 70px;
-    margin-bottom: 5px; }
-  #mapa .row .line {
-    display: block;
-    width: 111px;
-    height: 7px;
-    background: #FFC062;
-    margin: 0 auto; }
-  #mapa .row #map {
-    margin-top: 20px;
-    height: 400px; }
+      #mapa .row {
+        padding-top: 70px; } }
+    #mapa .row h2 {
+      font-family: 'Montserrat';
+      font-size: 30px;
+      font-weight: 800; }
+      @media (min-width: 992px) {
+        #mapa .row h2 {
+          font-size: 50px; } }
+    #mapa .row img {
+      width: 70px;
+      margin-bottom: 5px; }
+    #mapa .row .line {
+      display: block;
+      width: 111px;
+      height: 7px;
+      background: #FFC062;
+      margin: 0 auto; }
+    #mapa .row #map {
+      margin-top: 20px;
+      height: 400px; }
+
+.gm-style-iw-c {
+  padding: 15px !important;
+  background: #171717 !important; }
+  .gm-style-iw-c button {
+    opacity: 1; }
+    .gm-style-iw-c button img {
+      -o-object-position: -99999px 99999px;
+      object-position: -99999px 99999px;
+      background: url("../img/icons/close.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 10px 0px 0 0 !important; }
+  .gm-style-iw-c .gm-style-iw-d {
+    overflow: visible !important; }
+    .gm-style-iw-c .gm-style-iw-d .bi {
+      margin: 0;
+      color: #FFC062; }
+    .gm-style-iw-c .gm-style-iw-d .beer {
+      width: 50px !important;
+      margin: 5px 0 5px 0 !important; }
+    .gm-style-iw-c .gm-style-iw-d p:last-child {
+      color: #FFC062;
+      font-weight: 500; }
+
+.gm-style-iw-t::after {
+  background: black !important; }

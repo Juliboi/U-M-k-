@@ -17,9 +17,9 @@ $colors: (
 
 #historie {
   text-align: center;
+  background-color: color(background);
 
   .container {
-    background: color(background);
     padding-top: 50px;
 
     @include media-breakpoint-up(xl) {
@@ -38,6 +38,7 @@ $colors: (
 
       //TITLE
         .title {
+          overflow-x: hidden !important;
           @include media-breakpoint-up(xl) {
             order: 2;
           }
@@ -91,7 +92,7 @@ $colors: (
       //TEXT
         .text {
           padding-top: 40px;
-          min-height: 450px;
+          min-height: 250px;
 
 
           @include media-breakpoint-up(xl) {
@@ -114,13 +115,16 @@ $colors: (
             p {
               font-family: 'Montserrat';
               font-weight: 500;
-              font-size: 18px;
+              font-size: 16px;
               color: color(grey-dark);
               line-height: 22px;
               margin-bottom: 40px;
 
+              @include media-breakpoint-up(md) {
+                font-size: 18px;
+              }
+
               @include media-breakpoint-up(xl) {
-                font-size: 20px;
                 padding-top: 10px;
               }
             }
@@ -151,30 +155,42 @@ $colors: (
   }
 }
 
-//JS - SHOW MORE
+//JS - SHOW MORE => media-queries
 .showMore {
   @media only screen and (min-width: 320px) {
-    height: 580px !important;
+    height: 510px !important;
+  }
+  @media only screen and (min-width: 340px) {
+    height: 470px !important;
   }
   @media only screen and (min-width: 360px) {
-    height: 520px !important;
+    height: 460px !important;
   }
   @media only screen and (min-width: 365px) {
-    height: 490px !important;
+    height: 420px !important;
   }
   @media only screen and (min-width: 411px) {
-    height: 440px !important;
+    height: 375px !important;
+  }
+  @media only screen and (min-width: 440px) {
+    height: 340px !important;
   }
   @media only screen and (min-width: 568px) {
-    height: 320px !important;
+    height: 260px !important;
+  }
+  @media only screen and (min-width: 520px) {
+    height: 220px !important;
   }
   @include media-breakpoint-up(sm) {
-    height: 340px !important;
+    height: 280px !important;
+  }
+  @include media-breakpoint-up(md) {
+    height: 330px !important;
   }
   @include media-breakpoint-up(lg) {
     height: 250px !important;
   }
   @include media-breakpoint-up(xl) {
-    height: 418px !important;
+    height: 375px !important;
   }
 }

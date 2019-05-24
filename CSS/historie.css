@@ -8133,9 +8133,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 #historie {
-  text-align: center; }
+  text-align: center;
+  background-color: #FFEFD8; }
   #historie .container {
-    background: #FFEFD8;
     padding-top: 50px; }
     @media (min-width: 1200px) {
       #historie .container {
@@ -8152,46 +8152,48 @@ a.text-dark:hover, a.text-dark:focus {
         #historie .container .text-paragraph {
           -ms-flex-pack: distribute;
           justify-content: space-around; } }
-      @media (min-width: 1200px) {
-        #historie .container .text-paragraph .title {
-          -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-          order: 2; } }
-      #historie .container .text-paragraph .title h2 {
-        font-family: 'Montserrat';
-        font-weight: 200;
-        font-size: 18px;
-        text-transform: uppercase;
-        margin-bottom: 20px; }
+      #historie .container .text-paragraph .title {
+        overflow-x: hidden !important; }
         @media (min-width: 1200px) {
-          #historie .container .text-paragraph .title h2 {
-            text-align: right;
-            margin: 0 0 15px 0;
-            padding-right: 10px; } }
-      #historie .container .text-paragraph .title h3 {
-        font-family: 'Montserrat';
-        font-weight: 800;
-        text-transform: uppercase;
-        padding: 0 10px 0 10px;
-        margin-bottom: 15px; }
-        @media (min-width: 1200px) {
-          #historie .container .text-paragraph .title h3 {
-            padding: 0;
-            text-align: right;
-            font-size: 50px; } }
-      #historie .container .text-paragraph .title .line {
-        display: block;
-        width: 111px;
-        height: 7px;
-        background: #FFC062;
-        margin: auto; }
-        @media (min-width: 1200px) {
-          #historie .container .text-paragraph .title .line {
-            margin: 0px 0 0px 15px;
-            margin-left: auto; } }
+          #historie .container .text-paragraph .title {
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2; } }
+        #historie .container .text-paragraph .title h2 {
+          font-family: 'Montserrat';
+          font-weight: 200;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 20px; }
+          @media (min-width: 1200px) {
+            #historie .container .text-paragraph .title h2 {
+              text-align: right;
+              margin: 0 0 15px 0;
+              padding-right: 10px; } }
+        #historie .container .text-paragraph .title h3 {
+          font-family: 'Montserrat';
+          font-weight: 800;
+          text-transform: uppercase;
+          padding: 0 10px 0 10px;
+          margin-bottom: 15px; }
+          @media (min-width: 1200px) {
+            #historie .container .text-paragraph .title h3 {
+              padding: 0;
+              text-align: right;
+              font-size: 50px; } }
+        #historie .container .text-paragraph .title .line {
+          display: block;
+          width: 111px;
+          height: 7px;
+          background: #FFC062;
+          margin: auto; }
+          @media (min-width: 1200px) {
+            #historie .container .text-paragraph .title .line {
+              margin: 0px 0 0px 15px;
+              margin-left: auto; } }
       #historie .container .text-paragraph .text {
         padding-top: 40px;
-        min-height: 450px; }
+        min-height: 250px; }
         @media (min-width: 1200px) {
           #historie .container .text-paragraph .text {
             padding-top: 40px;
@@ -8211,13 +8213,15 @@ a.text-dark:hover, a.text-dark:focus {
         #historie .container .text-paragraph .text p {
           font-family: 'Montserrat';
           font-weight: 500;
-          font-size: 18px;
+          font-size: 16px;
           color: #858585;
           line-height: 22px;
           margin-bottom: 40px; }
+          @media (min-width: 768px) {
+            #historie .container .text-paragraph .text p {
+              font-size: 18px; } }
           @media (min-width: 1200px) {
             #historie .container .text-paragraph .text p {
-              font-size: 20px;
               padding-top: 10px; } }
         #historie .container .text-paragraph .text .btn {
           width: 110px;
@@ -8239,27 +8243,43 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 320px) {
   .showMore {
-    height: 580px !important; } }
+    height: 510px !important; } }
+
+@media only screen and (min-width: 340px) {
+  .showMore {
+    height: 470px !important; } }
 
 @media only screen and (min-width: 360px) {
   .showMore {
-    height: 520px !important; } }
+    height: 460px !important; } }
 
 @media only screen and (min-width: 365px) {
   .showMore {
-    height: 490px !important; } }
+    height: 420px !important; } }
 
 @media only screen and (min-width: 411px) {
   .showMore {
-    height: 440px !important; } }
+    height: 375px !important; } }
+
+@media only screen and (min-width: 440px) {
+  .showMore {
+    height: 340px !important; } }
 
 @media only screen and (min-width: 568px) {
   .showMore {
-    height: 320px !important; } }
+    height: 260px !important; } }
+
+@media only screen and (min-width: 520px) {
+  .showMore {
+    height: 220px !important; } }
 
 @media (min-width: 576px) {
   .showMore {
-    height: 340px !important; } }
+    height: 280px !important; } }
+
+@media (min-width: 768px) {
+  .showMore {
+    height: 330px !important; } }
 
 @media (min-width: 992px) {
   .showMore {
@@ -8267,4 +8287,4 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 1200px) {
   .showMore {
-    height: 418px !important; } }
+    height: 375px !important; } }
