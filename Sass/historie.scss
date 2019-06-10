@@ -1,10 +1,10 @@
-@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+@import '../bs4/node_modules/bootstrap/scss/bootstrap';
 
 $colors: (
-  gold-main: #FFC062,
-  gold-light: #FFD9A0,
-  background: #FFEFD8,
-  grey-light: #CECECE,
+  gold-main: #ffc062,
+  gold-light: #ffd9a0,
+  background: #ffefd8,
+  grey-light: #cecece,
   grey-dark: #858585,
   black-light: #303030,
   black-dark: #171717
@@ -13,7 +13,6 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
-
 
 #historie {
   text-align: center;
@@ -37,160 +36,119 @@ $colors: (
       }
 
       //TITLE
-        .title {
-          overflow-x: hidden !important;
+      .title {
+        overflow-x: hidden !important;
+        @include media-breakpoint-up(xl) {
+          order: 2;
+        }
+
+        //HISTORIE
+        h2 {
+          font-family: 'Montserrat';
+          font-weight: 200;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+
           @include media-breakpoint-up(xl) {
-            order: 2;
+            text-align: right;
+            margin: 0 0 15px 0;
+            padding-right: 10px;
           }
+        }
 
-          //HISTORIE
-            h2 {
-              font-family: 'Montserrat';
-              font-weight: 200;
-              font-size: 18px;
-              text-transform: uppercase;
-              margin-bottom: 20px;
+        //OD ŠKOLY PŘES OCTÁRNU AŽ K VÝČEPU
+        h3 {
+          font-family: 'Montserrat';
+          font-weight: 800;
+          text-transform: uppercase;
+          padding: 0 10px 0 10px;
+          margin-bottom: 15px;
 
-              @include media-breakpoint-up(xl) {
-                text-align: right;
-                margin: 0 0 15px 0;
-                padding-right: 10px;
-              }
-            }
-
-          //OD ŠKOLY PŘES OCTÁRNU AŽ K VÝČEPU
-            h3 {
-              font-family: 'Montserrat';
-              font-weight: 800;
-              text-transform: uppercase;
-              padding: 0 10px 0 10px;
-              margin-bottom: 15px;
-
-
-              @include media-breakpoint-up(xl) {
-                padding: 0;
-                text-align: right;
-                font-size: 50px;
-              }
-            }
-
-          //UNDERLINE
-            .line {
-              display: block;
-              width: 111px;
-              height: 7px;
-              background: #FFC062;
-              margin: auto;
-
-              @include media-breakpoint-up(xl) {
-                margin: 0px 0 0px 15px;
-                margin-left: auto;
-              }
-            }
+          @include media-breakpoint-up(xl) {
+            padding: 0;
+            text-align: right;
+            font-size: 50px;
           }
+        }
+
+        //UNDERLINE
+        .line {
+          display: block;
+          width: 111px;
+          height: 7px;
+          background: #ffc062;
+          margin: auto;
+
+          @include media-breakpoint-up(xl) {
+            margin: 0px 0 0px 15px;
+            margin-left: auto;
+          }
+        }
+      }
 
       //TEXT
-        .text {
-          padding-top: 40px;
-          min-height: 250px;
+      .text {
+        padding-top: 40px;
+        min-height: 250px;
 
+        @include media-breakpoint-up(xl) {
+          padding-top: 40px;
+          order: 1;
+          text-align: left;
+        }
+
+        //HISTORY TEXT
+        .history-text {
+          margin: 0;
+        }
+        .extra {
+          padding: 0;
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 1.8s;
+        }
+
+        p {
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-size: 16px;
+          color: color(grey-dark);
+          line-height: 22px;
+          margin-bottom: 40px;
 
           @include media-breakpoint-up(xl) {
-            padding-top: 40px;
-            order: 1;
-            text-align: left;
+            padding-top: 10px;
           }
-
-          //HISTORY TEXT
-            .history-text {
-              margin: 0;
-            }
-            .extra {
-              padding: 0;
-              height: 0px;
-              overflow: hidden;
-              transition: height 0.7s;
-            }
-
-            p {
-              font-family: 'Montserrat';
-              font-weight: 500;
-              font-size: 16px;
-              color: color(grey-dark);
-              line-height: 22px;
-              margin-bottom: 40px;
-
-              @include media-breakpoint-up(md) {
-                font-size: 18px;
-              }
-
-              @include media-breakpoint-up(xl) {
-                padding-top: 10px;
-              }
-            }
-
-          //BUTTON
-            .btn {
-              width: 110px;
-              height: 46px;
-              font-family: 'Frank Ruhl Libre';
-              font-weight: 500;
-              background-color: color(black-light);
-              color: color(gold-main);
-              border: 0;
-              border-radius: 50px;
-              text-align: center;
-              margin-bottom: 50px;
-            }
-
-            .btn:focus{
-              box-shadow:none;
-            }
-
-            @media only screen and (min-width: 500px) {
-              margin-bottom: 0px;
-            }
         }
+
+        //BUTTON
+        .btn {
+          width: 110px;
+          height: 46px;
+          font-family: 'Frank Ruhl Libre';
+          font-weight: 500;
+          background-color: color(black-light);
+          color: color(gold-main);
+          border: 0;
+          border-radius: 50px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .btn:focus {
+          box-shadow: none;
+        }
+
+        @media only screen and (min-width: 500px) {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 }
 
-//JS - SHOW MORE => media-queries
+//JS - SHOW MORE
 .showMore {
-  @media only screen and (min-width: 320px) {
-    height: 510px !important;
-  }
-  @media only screen and (min-width: 340px) {
-    height: 470px !important;
-  }
-  @media only screen and (min-width: 360px) {
-    height: 460px !important;
-  }
-  @media only screen and (min-width: 365px) {
-    height: 420px !important;
-  }
-  @media only screen and (min-width: 411px) {
-    height: 375px !important;
-  }
-  @media only screen and (min-width: 440px) {
-    height: 340px !important;
-  }
-  @media only screen and (min-width: 568px) {
-    height: 260px !important;
-  }
-  @media only screen and (min-width: 520px) {
-    height: 220px !important;
-  }
-  @include media-breakpoint-up(sm) {
-    height: 280px !important;
-  }
-  @include media-breakpoint-up(md) {
-    height: 330px !important;
-  }
-  @include media-breakpoint-up(lg) {
-    height: 250px !important;
-  }
-  @include media-breakpoint-up(xl) {
-    height: 375px !important;
-  }
+  max-height: 1200px !important;
 }

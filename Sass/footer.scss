@@ -1,10 +1,10 @@
-@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+@import '../bs4/node_modules/bootstrap/scss/bootstrap';
 
 $colors: (
-  gold-main: #FFC062,
-  gold-light: #FFD9A0,
-  background: #FFEFD8,
-  grey-light: #CECECE,
+  gold-main: #ffc062,
+  gold-light: #ffd9a0,
+  background: #ffefd8,
+  grey-light: #cecece,
   grey-dark: #858585,
   black-light: #303030,
   black-dark: #171717
@@ -20,111 +20,111 @@ $colors: (
     background: color(background) !important;
 
     @include media-breakpoint-up(lg) {
-    padding-top: 100px;
+      padding-top: 100px;
     }
 
     //MAIN ROW => GOES ALL THE WAY WIDTH
-      .row-main {
-        display: flex;
-        justify-content: center;
-        background: color(black-dark);
-        color: white;
-        font-family: 'Montserrat';
-        text-align: center;
-        padding: 60px 0px 0 0px;
+    .row-main {
+      display: flex;
+      justify-content: center;
+      background: color(black-dark);
+      color: white;
+      font-family: 'Montserrat';
+      text-align: center;
+      padding: 60px 0px 0 0px;
+
+      @include media-breakpoint-up(xl) {
+        text-align: left;
+        padding: 40px 0px 0 0px;
+      }
+
+      //KONTAKT
+      h2 {
+        color: color(gold-main);
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      //LOKACE + PHONE
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      //PHONE
+      .phone {
+        margin: 0px 0 40px 0;
+        color: color(gold-main) !important;
 
         @include media-breakpoint-up(xl) {
-          text-align: left;
-          padding: 40px 0px 0 0px;
-        }
-
-        //KONTAKT
-          h2 {
-            color: color(gold-main);
-            font-size: 20px;
-            text-transform: uppercase;
-          }
-
-        //LOKACE + PHONE
-          p {
-            font-size: 15px;
-            font-weight: 500;
-            margin: 0;
-          }
-
-        //PHONE
-          .phone {
-            margin: 15px 0 40px 0;
-
-            @include media-breakpoint-up(xl) {
-              margin-bottom: 0;
-            }
-          }
-
-        //REZERVACE => OTEVÍRACÍ DOBA
-          .rezervace {
-            margin: 10px 0 40px 0;
-            color: color(gold-main);
-
-            @include media-breakpoint-up(xl) {
-              margin: 0;
-            }
-          }
-
-        //EXTRA LINKS
-          .extra {
-            padding: 0 40px 0 40px;
-
-            //NOVINKY FACEBOOK + HODNOCENÍ
-            p {
-              margin-bottom: 20px;
-            }
-
-            //LINKS
-            a {
-              color: color(gold-main);
-            }
-          }
-
-
-        //LOGO AND COPYRIGHT
-          .logo {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
-            //LINE
-              .line {
-                display: block;
-                width: 180px;
-                height: 2px;
-                background: #FFC062;
-                margin: 15px auto 0 auto;
-
-                @include media-breakpoint-up(xl) {
-                width: 180px;
-                }
-              }
-
-            //LOGO
-              img {
-                width: 180px;
-              }
-
-            //COYPYRIGHT
-              .copyright {
-                font-size: 10px;
-                color: color(gold-main);
-                font-weight: 400;
-                position: relative;
-                bottom: 13px;
-                margin-bottom: 15px;
-
-                @include media-breakpoint-up(xl) {
-                  margin: 0;
-                }
-              }
+          margin-bottom: 0;
         }
       }
+
+      //REZERVACE => OTEVÍRACÍ DOBA
+      .rezervace {
+        margin: 10px 0 40px 0;
+        color: color(gold-main);
+
+        @include media-breakpoint-up(xl) {
+          margin: 0;
+        }
+      }
+
+      //EXTRA LINKS
+      .extra {
+        padding: 0 40px 0 40px;
+
+        //NOVINKY FACEBOOK + HODNOCENÍ
+        p {
+          margin-bottom: 20px;
+        }
+
+        //LINKS
+        a {
+          color: color(gold-main);
+        }
+      }
+
+      //LOGO AND COPYRIGHT
+      .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        //LINE
+        .line {
+          display: block;
+          width: 180px;
+          height: 2px;
+          background: #ffc062;
+          margin: 15px auto 0 auto;
+
+          @include media-breakpoint-up(xl) {
+            width: 180px;
+          }
+        }
+
+        //LOGO
+        img {
+          width: 180px;
+        }
+
+        //COYPYRIGHT
+        .copyright {
+          font-size: 10px;
+          color: color(gold-main);
+          font-weight: 400;
+          position: relative;
+          bottom: 13px;
+          margin-bottom: 15px;
+
+          @include media-breakpoint-up(xl) {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }

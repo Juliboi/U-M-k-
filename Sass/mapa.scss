@@ -1,10 +1,10 @@
-@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+@import '../bs4/node_modules/bootstrap/scss/bootstrap';
 
 $colors: (
-  gold-main: #FFC062,
-  gold-light: #FFD9A0,
-  background: #FFEFD8,
-  grey-light: #CECECE,
+  gold-main: #ffc062,
+  gold-light: #ffd9a0,
+  background: #ffefd8,
+  grey-light: #cecece,
   grey-dark: #858585,
   black-light: #303030,
   black-dark: #171717
@@ -22,43 +22,42 @@ $colors: (
     text-align: center;
 
     @include media-breakpoint-up(lg) {
-    padding-top: 70px;
+      padding-top: 70px;
     }
 
     //KDE NÁS NAJDETE
-      h2 {
-        font-family: 'Montserrat';
-        font-size: 30px;
-        font-weight: 800;
+    h2 {
+      font-family: 'Montserrat';
+      font-size: 30px;
+      font-weight: 800;
 
-        @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(lg) {
         font-size: 50px;
-        }
       }
+    }
 
     //ICON
-      img {
-        width: 70px;
-        margin-bottom: 5px;
-      }
+    img {
+      width: 70px;
+      margin-bottom: 5px;
+    }
 
     //UNDERLINE
-      .line {
-        display: block;
-        width: 111px;
-        height: 7px;
-        background: #FFC062;
-        margin: 0 auto;
-      }
+    .line {
+      display: block;
+      width: 111px;
+      height: 7px;
+      background: #ffc062;
+      margin: 0 auto;
+    }
 
     //MAP
-      #map {
-        margin-top: 20px;
-        height: 400px;
-      }
+    #map {
+      margin-top: 20px;
+      height: 400px;
+    }
   }
 }
-
 
 //outer info box
 .gm-style-iw-c {
@@ -78,9 +77,8 @@ $colors: (
     }
   }
 
-
   //inner info box
-  .gm-style-iw-d{
+  .gm-style-iw-d {
     overflow: visible !important;
 
     //address
@@ -104,6 +102,34 @@ $colors: (
 }
 
 //pointer down
-.gm-style-iw-t::after{
+.gm-style-iw-t::after {
   background: black !important;
+}
+
+//INFO Google maps
+.info-box {
+  font-family: 'Montserrat';
+  //U Míšků
+  img {
+    width: 150px !important;
+    height: 60px;
+    margin: 0 !important;
+  }
+
+  //Address
+  p {
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.gm-style {
+  div img[src='img/icons/map-pointer.svg'] {
+    transition: transform 0.3s ease-in;
+    transform: scale(0.8);
+  }
+
+  div:hover img[src='img/icons/map-pointer.svg'] {
+    transform: scale(1);
+  }
 }

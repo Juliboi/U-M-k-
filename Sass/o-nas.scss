@@ -1,10 +1,10 @@
-@import "../bs4/node_modules/bootstrap/scss/bootstrap";
+@import '../bs4/node_modules/bootstrap/scss/bootstrap';
 
 $colors: (
-  gold-main: #FFC062,
-  gold-light: #FFD9A0,
-  background: #FFEFD8,
-  grey-light: #CECECE,
+  gold-main: #ffc062,
+  gold-light: #ffd9a0,
+  background: #ffefd8,
+  grey-light: #cecece,
   grey-dark: #858585,
   black-light: #303030,
   black-dark: #171717
@@ -17,161 +17,170 @@ $colors: (
 #o-nas {
   background-color: color(background);
   //TITLE AND PARAGRAPHS
-    .title-paragraph {
-      display:flex;
-      justify-content: center;
-      padding-top: 50px;
-      text-align: center;
-      overflow-x: hidden !important;
+  .title-paragraph {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+    overflow-x: hidden !important;
 
-      @include media-breakpoint-up(xl) {
-        text-align: left;
-      }
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
 
-      @media only screen and (min-width: 1500px) {
-        justify-content: space-around;
-        text-align: left;
-      }
-
+    @media only screen and (min-width: 1500px) {
+      justify-content: space-around;
+      text-align: left;
+    }
 
     //TITLE
-      //O NÁS
-        h2 {
-          font-family: 'Montserrat';
-          font-weight: 200;
-          font-size: 18px;
-          text-transform: uppercase;
-          margin-bottom: 20px;
+    //O NÁS
+    h2 {
+      font-family: 'Montserrat';
+      font-weight: 200;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
 
-          @include media-breakpoint-up(xl) {
-            margin:30px 0 15px 5px;
-          }
-        }
+      @include media-breakpoint-up(xl) {
+        margin: 30px 0 15px 5px;
+      }
+    }
 
-      //S VÍCE NEŽ STALETOU TRADICÍ
-        h3 {
-          font-family: 'Montserrat';
-          font-weight: 800;
-          text-transform: uppercase;
-          padding: 0 10px 0 10px;
-          display: flex;
-          margin-bottom: 15px;
-          align-items: center;
-          justify-content: center;
+    //S VÍCE NEŽ STALETOU TRADICÍ
+    h3 {
+      font-family: 'Montserrat';
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0 10px 0 10px;
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center;
+      justify-content: center;
 
-          @include media-breakpoint-up(xl) {
-            font-size: 50px;
-            padding: 0;
-          }
-        }
+      @include media-breakpoint-up(xl) {
+        font-size: 50px;
+        padding: 0;
+      }
+    }
 
-      //UNDERLINE
-        .line {
-          display: block;
-          width: 111px;
-          height: 7px;
-          background: #FFC062;
-          margin: auto;
+    //UNDERLINE
+    .line {
+      display: block;
+      width: 111px;
+      height: 7px;
+      background: #ffc062;
+      margin: auto;
 
-          @include media-breakpoint-up(xl) {
-            margin: 0 0 20px 5px;
-          }
-        }
+      @include media-breakpoint-up(xl) {
+        margin: 0 0 20px 5px;
+      }
+    }
 
     //TEXT
-      .text {
-        padding-top: 40px;
+    .text {
+      padding-top: 40px;
 
-        @include media-breakpoint-up(xl) {
-          padding-top: 70px;
-        }
+      @include media-breakpoint-up(xl) {
+        padding-top: 70px;
+      }
 
-        //PARAGRAPH
-          p {
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 16px;
-            color: color(grey-dark);
-            line-height: 22px;
-            margin-bottom: 22px;
-          }
+      //ZAKLADÁME SE NA DOBRÉM PIVU...
+      .intro {
+        color: color(black-light);
+        font-weight: bold;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 22px 0;
+        text-transform: initial;
+      }
 
-          @include media-breakpoint-up(md) {
-            font-size: 18px;
-          }
+      //PARAGRAPH
+      p {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        color: color(grey-dark);
+        line-height: 22px;
+        margin-bottom: 22px;
+      }
 
-        //ZAKLADÁME SE NA DOBRÉM PIVU...
-          p:nth-child(1) {
-            color: color(black-light);
-            font-weight: bold;
-          }
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
       }
     }
+  }
 
   //CARDS
-    //ROW
-    .cards {
-      overflow-x: hidden !important;
-      
+  //ROW
+  .cards {
+    overflow-x: hidden !important;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+
+    //ALL THE CARDS
+    .card {
+      height: 111px;
+      background: linear-gradient(
+          rgba(29, 29, 29, 0.65),
+          rgba(29, 29, 29, 0.65)
+        ),
+        url('../img/jirkaPhotos/hostinec-card.JPG') 70% 100% / cover;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0;
+      text-decoration: none;
+
       @include media-breakpoint-up(md) {
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
+        margin: 0;
+        height: 300px;
       }
 
-      //ALL THE CARDS
-        .card {
-          height: 111px;
-          background: linear-gradient(rgba(29,29,29,0.65,),rgba(29,29,29,0.65,)),  url('../img/jirkaPhotos/hostinec-card.JPG')70% 100% /cover;
-          margin-bottom: 15px;
-          margin-top: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 0;
-          text-decoration: none;
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+        height: 382px;
+      }
 
-          @include media-breakpoint-up(md) {
-            margin: 0;
-            height: 300px;
-          }
-
-          @include media-breakpoint-up(lg) {
-            margin: 0;
-            height: 382px;
-          }
-
-        //HOSTINEC A TANEČNÍ SÁL
-          h2 {
-            font-family: 'Montserrat';
-            font-size: 30px;
-            font-weight: bold;
-            color: color(gold-main);
-            transition: color 0.2s ease-in;
-          }
-        }
-
-        //TANEČNÍ SÁL
-          .card-2 {
-            background: linear-gradient(rgba(29,29,29,0.25,),rgba(29,29,29,0.25,)), url('../img/jirkaPhotos/sal-card.png') 55% 40% /cover;
-            margin: 0;
-
-            @include media-breakpoint-up(md) {
-              margin-left: 30px;
-            }
-
-            @include media-breakpoint-up(lg) {
-              margin-left: 50px;
-            }
-
-            @include media-breakpoint-up(xl) {
-              margin-left: 100px;
-            }
-          }
-
-        //HOVER EFFECT
-          .card:hover h2 {
-            color: white;
-          }
+      //HOSTINEC A TANEČNÍ SÁL
+      h2 {
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: bold;
+        color: color(gold-main);
+        transition: color 0.2s ease-in;
+      }
     }
+
+    //TANEČNÍ SÁL
+    .card-2 {
+      background: linear-gradient(rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.6)),
+        url('../img/jirkaPhotos/gallery-photos/img6.JPG') 55% 40% / cover;
+      margin: 0;
+
+      @include media-breakpoint-up(md) {
+        margin-left: 30px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-left: 50px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin-left: 100px;
+      }
+    }
+
+    //HOVER EFFECT
+    .card:hover h2 {
+      color: white;
+    }
+  }
 }
